@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Monument";
+  src: url("../fonts/MonumentExtended-Regular.eot");
+  src: local("☺"), url("../fonts/MonumentExtended-Regular.woff") format("woff"), url("../fonts/MonumentExtended-Regular.ttf") format("truetype"), url("../fonts/MonumentExtended-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("../fonts/MonumentExtended-Ultrabold.eot");
+  src: local("☺"), url("../fonts/MonumentExtended-Ultrabold.woff") format("woff"), url("../fonts/MonumentExtended-Ultrabold.ttf") format("truetype"), url("../fonts/MonumentExtended-Ultrabold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Regular.eot");
+  src: local("☺"), url("../fonts/Sen-Regular.woff") format("woff"), url("../fonts/Sen-Regular.ttf") format("truetype"), url("../fonts/Sen-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sen";
+  src: url("../fonts/Sen-Bold.eot");
+  src: local("☺"), url("../fonts/Sen-Bold.woff") format("woff"), url("../fonts/Sen-Bold.ttf") format("truetype"), url("../fonts/Sen-Bold.svg") format("svg");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen";
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.container {
+  width: 1440px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Monument";
+  font-size: 36px;
+  letter-spacing: 7%;
+  font-weight: normal;
+}
+
+.header {
+  padding: 10px 0;
+  background: #2F2F32;
+  border-bottom: 1px solid #5a5a60;
+}
+.header__topmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__topmenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__topmenu-list li:not(.no-margin) {
+  margin-right: 20px;
+}
+.header__topmenu-list a {
+  color: #888;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__topmenu-list a:hover, .header__topmenu-list a:active {
+  color: #fff;
+}
+
+.navigation__botmenu {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+}
+.navigation__botmenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+}
+.navigation__botmenu-link {
+  position: relative;
+  display: block;
+  padding: 20px 30px;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.navigation__botmenu-link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background-color: #EC3236;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+.navigation__botmenu-link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+.navigation__botmenu-link:hover {
+  color: #fff;
+}

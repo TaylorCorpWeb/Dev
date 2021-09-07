@@ -1,0 +1,108 @@
+@import "_fonts";
+@import "_var";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Sen';
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.container{
+    width: 1440px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+nav{
+    ul{
+        list-style: none;
+    }
+}
+
+ins{
+    text-decoration: none;
+}
+del{
+    text-decoration: none;
+}
+
+h2{
+    @include h2-title;
+}
+
+.header{
+    padding: 10px 0;
+    background: #2F2F32;
+    border-bottom: 1px solid #5a5a60;
+    &__topmenu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-list{
+            display: flex;
+            li:not(.no-margin){
+                margin-right: 20px;
+            }
+            a{
+                color: #888;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: normal;
+                transition: all .3s ease;
+                &:hover, &:active{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.navigation{
+    &__botmenu{
+        position: relative;
+        width: 700px;
+        margin: 0 auto;
+        &-list{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+        }
+        &-link{
+            position: relative;
+            display: block;
+            padding: 20px 30px;
+            color: #000;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all .2s ease;
+            &::before{
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0; right: 0; bottom: 0; left: 0;
+                inset: 0 0 0 0;
+                background-color: $accent-color;
+                z-index: -1;
+                transition: transform .3s ease;
+               
+                transform: scaleX(0);
+                transform-origin: bottom right;
+            }
+            &:hover::before{
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+$accent-color: #EC3236;
+
+@mixin h2-title {
+    font-family: 'Monument';
+    font-size: 36px;
+    letter-spacing: 7%;
+    font-weight: normal;
+}
+@mixin text-title {
+    font-family: 'Sen';
+    font-size: 18px;
+    letter-spacing: 3%;
+    font-weight: 800;
+}
+@mixin text-descript {
+    font-family: 'Sen';
+    font-size: 15px;
+    letter-spacing: 3%;
+    font-weight: normal;
+}
