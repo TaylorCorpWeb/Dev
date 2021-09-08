@@ -1,0 +1,16 @@
+@keyframes line-down {
+    0%{
+        top: -10%;
+    }
+    100%{
+        top: 110%
+    }
+}
+@keyframes line-up {
+    0%{
+        top: 110%
+    }
+    100%{
+        top: -10%
+    }
+}

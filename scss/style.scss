@@ -1,5 +1,6 @@
 @import "_fonts";
 @import "_var";
+@import "_animations";
 
 
 *{
@@ -179,19 +180,25 @@ h2{
             height: 65px;
             width: 3px;
 
-            top: 20%;
+            top: -10%;
             left: -1px;
             background: #fff;
+
+            animation: line-down 5.5s 1.5s linear infinite;
         }
     }
     &__line2{
         &::before{
-            top: 50%;
+            top: -10%;
+
+            animation: line-up 3.5s linear infinite;
         }
     }
     &__line3{
         &::before{
-            top: 30%;
+            top: -10%;
+
+            animation: line-up 4.5s 2s linear infinite;
         }
         &::after{
             content: '';
@@ -199,9 +206,11 @@ h2{
             height: 65px;
             width: 3px;
 
-            bottom: 5%;
+            top: -55%;
             left: -1px;
             background: #fff;
+
+            animation: line-down 3s linear infinite;
         }
     }
     &__content{
@@ -247,6 +256,7 @@ h2{
             min-height: 60vh;
         }
         &__image{
+            overflow: hidden;
             flex-basis: 100%;
             padding: 0 0 0 0;
             flex: 0 0 100%;
