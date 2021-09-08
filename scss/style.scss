@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    width: 1440px;
+    width: 100%;
     padding: 0px 15px;
     margin: 0 auto;
 }
@@ -41,7 +41,7 @@ h2{
 }
 
 .header{
-    padding: 10px 0;
+    padding: 15px 0;
     background: #2F2F32;
     border-bottom: 1px solid #5a5a60;
     &__topmenu{
@@ -54,6 +54,7 @@ h2{
                 margin-right: 20px;
             }
             a{
+                padding: 0;
                 color: #888;
                 text-decoration: none;
                 font-size: 14px;
@@ -70,12 +71,20 @@ h2{
 .navigation{
     &__botmenu{
         position: relative;
-        width: 700px;
         margin: 0 auto;
         z-index: 5;
-        &-list{
+        width: 100%;
+        &-nav{
             display: flex;
             justify-content: center;
+            flex-basis: 100%;
+        }
+        &-list{
+            flex-basis: 20%;
+            display: flex;
+            width: auto;
+            justify-content: center;
+            align-items: flex-start;
             position: absolute;
             top: 0;
             background: #fff;
@@ -117,6 +126,8 @@ h2{
 
 .section{
     overflow: hidden;
+    display: flex;
+    height: calc(100vh - 44px );
     &__body{
         width: 100%;
         padding: 0px 15%;

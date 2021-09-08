@@ -47,7 +47,7 @@ body {
 }
 
 .container {
-  width: 1440px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0 auto;
 }
@@ -74,7 +74,7 @@ h2 {
 }
 
 .header {
-  padding: 10px 0;
+  padding: 15px 0;
   background: #2F2F32;
   border-bottom: 1px solid #5a5a60;
 }
@@ -102,6 +102,7 @@ h2 {
 }
 
 .header__topmenu-list a {
+  padding: 0;
   color: #888;
   text-decoration: none;
   font-size: 14px;
@@ -116,18 +117,35 @@ h2 {
 
 .navigation__botmenu {
   position: relative;
-  width: 700px;
   margin: 0 auto;
   z-index: 5;
+  width: 100%;
 }
 
-.navigation__botmenu-list {
+.navigation__botmenu-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.navigation__botmenu-list {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: absolute;
   top: 0;
   background: #fff;
@@ -180,6 +198,10 @@ h2 {
 
 .section {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 44px);
 }
 
 .section__body {
