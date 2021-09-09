@@ -250,7 +250,7 @@ h2{
             :hover{
                 color: #fff;
                 transform: scale(1.1) translateX(0px);
-                animation: shake 3s .2s linear infinite;
+                animation: shake 3s .2s ease-out infinite;
             }
     }
 }
