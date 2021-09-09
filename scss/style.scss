@@ -230,19 +230,28 @@ h2{
        text-transform: uppercase;
     }
     &__btn{
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-top: 50px;
+        width: 265px;
         a{
+            text-align: center;
             text-decoration: none;
             color: #fff;
             font-size: 18px;
             text-transform: uppercase;
-            border: 1px solid #fff;
-            border-radius: 5px;
+            transition: .2s;
 
             display: block;
-            width: 270px;
-            margin-top: 50px;
-            padding: 20px 50px;
+            width: auto;
+            padding: 20px 0;
         }
+            :hover{
+                color: #fff;
+                transform: scale(1.1) translateX(0px);
+                animation: shake 3s .2s linear infinite;
+            }
     }
 }
 @media (max-width: 767px){
