@@ -682,34 +682,14 @@ h2 {
   font-size: 24px;
   padding: 20px;
   display: none;
+  background-image: url(../img/anim-img1.png), url(../img/anim-img2.png);
+  background-repeat: no-repeat;
+  background-position: top right, bottom left;
 }
 
 .advantage__contentItem img {
   border-radius: 5px;
-}
-
-.advantage__contentItem::after {
-  content: '';
-  position: absolute;
-  width: 520px;
-  height: 477px;
-  left: -50px;
-  top: 80px;
-  z-index: -2;
-  background: #EC3236;
-  border-radius: 5px;
-}
-
-.advantage__contentItem::before {
-  content: '';
-  position: absolute;
-  width: 520px;
-  height: 477px;
-  right: -10px;
-  top: 100px;
-  z-index: -1;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  padding: 50px;
 }
 
 .advantage__contentItem--active {
