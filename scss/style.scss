@@ -300,7 +300,14 @@ h2{
 
 .advantage-section{
     padding: 100px 0;
-    
+    position: relative;
+}
+//particles js
+
+.particles-js-canvas-el{
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 // .advantage{
