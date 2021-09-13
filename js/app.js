@@ -21,7 +21,7 @@ particlesJS(
         'value': 38
       },
       'color': {
-        'value': ['#6641D1', '#EC3236', '#575757']
+        'value': ['#492B2E', '#EC3236', '#575757']
       },
       'shape': {
         'type': 'circle'

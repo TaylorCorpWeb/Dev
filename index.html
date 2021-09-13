@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taylor Shipping Solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
         <div class="container">
             <div class="navigation__botmenu">
                 <nav class="navigation__botmenu-nav">
-                    <ul class="navigation__botmenu-list">
+                    <ul class="navigation__botmenu-list" data-aos="fade-up">
                         <li><a href="#" class="navigation__botmenu-link">About us</a></li>
                         <li><a href="#" class="navigation__botmenu-link">Services</a></li>
                         <li><a href="#" class="navigation__botmenu-link">Capacity</a></li>
@@ -43,7 +44,7 @@
     </section>
 
     <section class="main">
-        <div class="main__content">
+        <div class="main__content" data-aos="fade-right" data-aos-delay="200">
             <div class="main__container">
                 <div class="main__lines">
                     <div class="main__line main__line1"></div>
@@ -63,7 +64,7 @@
             </div>
         </div>
         <div class="main__image">
-            <img src="img/main__page-img.jpg" alt="main-img">
+            <img src="img/main__page-img.jpg" alt="main-img" data-aos="fade-left" data-aos-delay="200">
         </div>
     </section>
 
@@ -71,7 +72,7 @@
         <div class="container">
             <p class="h2-description">Why Taylor shipping solutions?</p>
             <h2>THE TAYLOR <br> ADVANTAGE</h2>
-            <nav class="advantage">
+            <nav class="advantage" data-aos="zoom-in" data-aos-duration="700">
                 <div class="advantage__contentList">
                     <div class="advantage__contentItem advantage__contentItem--active">
                         <img src="img/brokering-img.jpg" alt="brokering-img">
@@ -88,28 +89,28 @@
                 </div>
         
                 <div class="advantage__tabList">
-                  <div class="advantage__tabItem advantage__tabItem--active">
+                  <div class="advantage__tabItem advantage__tabItem--active" data-aos="fade-left">
                     <div class="advantage__tabText advantage__tabText-brokering">
                         <p class="advantage__tabTitle title-style">Brokering</p>
                         <p class="advantage__tabDescription description-style">Taylor Shipping Solutions can provide brokerage services to both motor carriers and shippers.</p>
                     </div>
                     <a class="advantage__tabBtn">More</a>
                   </div>
-                  <div class="advantage__tabItem">
+                  <div class="advantage__tabItem" data-aos="fade-left" data-aos-delay="100">
                     <div class="advantage__tabText advantage__tabText-capacity">
                         <p class="advantage__tabTitle title-style">Capacity</p>
                         <p class="advantage__tabDescription description-style">We provide transportation services from over the road to air freight. No job is too small or too big!</p>
                     </div>
                     <a class="advantage__tabBtn">More</a>
                   </div>
-                  <div class="advantage__tabItem">
+                  <div class="advantage__tabItem" data-aos="fade-left" data-aos-delay="200">
                     <div class="advantage__tabText advantage__tabText-tracking">
                         <p class="advantage__tabTitle title-style">Tracking and Tracing</p>
                         <p class="advantage__tabDescription description-style">Our team is dedicated to providing all and any updates and information you need, when you need them.</p>
                     </div>
                     <a class="advantage__tabBtn">More</a>
                   </div>
-                  <div class="advantage__tabItem">
+                  <div class="advantage__tabItem" data-aos="fade-left" data-aos-delay="300">
                     <div class="advantage__tabText advantage__tabText-support">
                         <p class="advantage__tabTitle title-style">24/7 Support</p>
                         <p class="advantage__tabDescription description-style">Our dedicated team is available whenever you need them with 24/7 Customer Support!</p>
@@ -122,10 +123,12 @@
     </section>
    
 
-    <script src="js/script.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/aos-settings.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>
