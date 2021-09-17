@@ -43,11 +43,6 @@
             width: auto;
             padding: 20px 0;
         }
-            :hover{
-                color: #fff;
-                transform: scale(1.1) translateX(0px);
-                animation: shake 3s .2s ease-out infinite;
-            }
     }
     &__t-letter{
         position: absolute;
