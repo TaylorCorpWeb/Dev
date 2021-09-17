@@ -1,0 +1,86 @@
+.services{
+    height: auto;
+    width: 100%;
+    background: rgba(31,31,33,0.9);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    &__container{
+        width: 90%;
+    }
+    &__header{
+        &Small{
+            @include h2-description;
+        }
+        &Big{
+            @include h2-title;
+            text-transform: uppercase;
+        }
+    }
+    &__photoContainerLeft{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px; 
+        grid-template-areas: 
+            "big big small-1 small-2"
+            "big big small-3 small-4"; 
+        padding-bottom: 20px;
+    }
+    &__photoContainerRight{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px; 
+        grid-template-areas: 
+            "small-1 small-2 big big"
+            "small-3 small-4 big big"; 
+        padding-bottom: 20px;
+    }
+    &__photoContainerItem{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    &__serviceInformation{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 210px;
+        height: 82px;
+        padding-left: 20px;
+        margin: 0;
+        background: #363639;
+    }
+    &__serviceName{
+        padding-top: 15px;
+        padding-bottom: -15px;
+        flex-basis: 100%;
+        span{
+            color: $accent-color;
+        }
+    }
+    &__readMore{
+        flex-basis: 100%;
+        padding-top: -50px;
+    }
+    &__photoContainerItemBig{
+        grid-area: big;
+    }
+    &__photoContainerItemSmall-1{
+        grid-area: small-1;
+    }
+    &__photoContainerItemSmall-2{
+        grid-area: small-2;
+    }
+    &__photoContainerItemSmall-3{
+        grid-area: small-3;
+    }
+    &__photoContainerItemSmall-4{
+        grid-area: small-4;
+    }
+}
