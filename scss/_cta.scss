@@ -1,0 +1,55 @@
+.cta{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background: rgba(31,31,33,0.9);
+    padding: 0 0 100px 0;
+    &__container{
+        position: relative;
+        width: 90%;
+        display: flex;
+        background: #363639;
+        justify-content: space-between;
+    }
+    &__header{
+        padding: 50px 0 50px 75px;
+        &Big{
+            padding: 0;
+            text-transform: uppercase;
+            @include h2-title;
+        }
+        &Small{
+            padding: 0;
+            @include h2-description;
+        }
+    }
+    &__btn{
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        margin-top: 70px;
+        width: 265px;
+        a{
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            transition: .2s;
+
+            display: block;
+            width: auto;
+            padding: 20px 0;
+        }
+            :hover{
+                color: #fff;
+                transform: scale(1.1) translateX(0px);
+                animation: shake 3s .2s ease-out infinite;
+            }
+    }
+    &__t-letter{
+        position: relative;
+        font-size: 348px;
+    }
+}

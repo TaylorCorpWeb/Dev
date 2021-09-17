@@ -1,0 +1,101 @@
+.services{
+    height: auto;
+    width: 100%;
+    background: rgba(31,31,33,0.9);
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    overflow: hidden;
+    &__container{
+        width: 90%;
+    }
+    &__header{
+        &Small{
+            @include h2-description;
+        }
+        &Big{
+            @include h2-title;
+            text-transform: uppercase;
+        }
+    }
+    &__photoContainerLeft{
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px;
+        grid-template-areas: 
+            "big big small-1 small-2"
+            "big big small-3 small-4"; 
+        padding-bottom: 20px;
+    }
+    &__photoContainerRight{
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 20px; 
+        grid-template-areas: 
+            "small-1 small-2 big big"
+            "small-3 small-4 big big"; 
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+    &__photoContainerItem{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    &__serviceInformation{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 210px;
+        height: 82px;
+        padding: 15px 0 15px 25px;
+        margin: 0;
+        background: #363639;
+    }
+    &__serviceName{
+        flex-basis: 100%;
+        @include text-title;
+        span{
+            color: $accent-color;
+        }
+    }
+    &__readMore{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: -50px;
+        @include text-descript;
+        text-transform: lowercase;
+        color: $accent-color;
+        &Arrow{
+            margin: 6px 0 0 5px;
+        }
+    }
+    &__photoContainerItemBig{
+        grid-area: big;
+    }
+    &__photoContainerItemSmall-1{
+        grid-area: small-1;
+    }
+    &__photoContainerItemSmall-2{
+        grid-area: small-2;
+    }
+    &__photoContainerItemSmall-3{
+        grid-area: small-3;
+    }
+    &__photoContainerItemSmall-4{
+        grid-area: small-4;
+    }
+}
