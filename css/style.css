@@ -196,7 +196,7 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 20px;
-      grid-template-areas: "big big small-1 small-2" "big big small-3 small-4";
+      grid-template-areas: "big big small-1 small-2" "big big small-3 small-4";
   padding-bottom: 20px;
 }
 
@@ -210,7 +210,7 @@
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 20px;
-      grid-template-areas: "small-1 small-2 big big" "small-3 small-4 big big";
+      grid-template-areas: "small-1 small-2 big big" "small-3 small-4 big big";
   padding-bottom: 20px;
   overflow: hidden;
 }
@@ -372,8 +372,8 @@
   position: relative;
   border: 1px solid #fff;
   border-radius: 5px;
-  margin: 25px 0 36px 0;
-  width: 265px;
+  margin-top: 50px;
+  width: 290px;
 }
 
 .cta__btn a {
@@ -382,11 +382,46 @@
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: relative;
+  z-index: 1;
   display: block;
   width: auto;
   padding: 20px 0;
+}
+
+.cta__btn a:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #000;
+  z-index: 2;
+}
+
+.cta__btn a::before {
+  content: url(../img/btn__icon.svg);
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.cta__btn a:hover:before {
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: -1;
 }
 
 .cta__t-letter {
@@ -443,6 +478,13 @@
   margin-right: 80px;
 }
 
+.footer__featuredLinks div :hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .footer__featuredLinks div a {
   display: block;
   font-family: 'Sen';
@@ -452,7 +494,7 @@
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin: 0 0 10px 25px;
   position: relative;
 }
 
@@ -513,6 +555,15 @@
 
 .footer__socialLink {
   margin-right: 15px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer__socialLink :hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 * {
