@@ -25,10 +25,14 @@
     &__featuredLinks{
         margin-right: 80px;
         div{
+            :hover{
+                transition: .3s;
+                transform: scale(1.1);
+            }
             a{
                 display: block;
                 @include footer-link;
-                margin-bottom: 10px;
+                margin: 0 0 10px 25px;
                 position: relative;
             }
             ::before{
@@ -66,5 +70,10 @@
     }
     &__socialLink{
         margin-right: 15px;
+        transform: scale(1);
+        :hover{
+            transition: .3s;
+            transform: scale(1.1);
+        }
     }
 }
