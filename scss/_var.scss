@@ -28,3 +28,20 @@ $accent-color: #EC3236;
     font-weight: normal;
     color: #ccc;
 }
+@mixin p-subtitle{
+    font-family: 'Sen';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    color: #fff;
+}
+@mixin footer-link{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}

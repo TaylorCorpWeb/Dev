@@ -395,6 +395,126 @@
   right: 0;
 }
 
+.footer {
+  background: #1a1a1c;
+  padding: 60px 60px 30px 60px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.footer__logo {
+  padding-bottom: 20px;
+}
+
+.footer__copyright {
+  font-family: 'Sen';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: #fff;
+}
+
+.footer__boxLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__header {
+  padding-bottom: 30px;
+}
+
+.footer__header span {
+  color: #EC3236;
+}
+
+.footer__featuredLinks {
+  margin-right: 80px;
+}
+
+.footer__featuredLinks div a {
+  display: block;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer__featuredLinks div ::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  height: 1px;
+  width: 15px;
+  background-color: #EC3236;
+  z-index: 2;
+}
+
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.footer__contactInfo img {
+  padding-right: 15px;
+}
+
+.footer__contactInfo p {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer__socialLinks {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__socialLink {
+  margin-right: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
