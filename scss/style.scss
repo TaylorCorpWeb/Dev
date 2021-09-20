@@ -246,26 +246,47 @@ h2{
         border: 1px solid #fff;
         border-radius: 5px;
         margin-top: 50px;
-        width: 265px;
+        width: 290px;
         a{
             text-align: center;
             text-decoration: none;
             color: #fff;
             font-size: 18px;
             text-transform: uppercase;
-            transition: .2s;
+            transition: .3s;
+            position: relative;
 
             display: block;
             width: auto;
             padding: 20px 0;
-        }
-            :hover{
-                color: #fff;
-                transform: scale(1.1) translateX(0px);
-                animation: shake 3s .2s ease-out infinite;
+            &::before{
+                content: url(../img/btn__icon.svg);
+                width: 18px;
+                height: 18px;
+                background: #fff;
+                padding: 10px;
+                border-radius: 5px;
+
+                z-index: -1;
+                position: absolute;
+                left: 15px;
+                top: 50%;
+                transform: translate(0, -50%);
+                transition: all .3s ease;
             }
+            &:hover:before{
+                padding: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            &:hover{
+                color: #000;
+            }
+        }
     }
 }
+
 @media (max-width: 767px){
     .main{
         display: flex;
@@ -293,7 +314,6 @@ h2{
             }
         }
         &__container{
-            
             width: 100%;
         }
     }
