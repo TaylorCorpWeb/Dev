@@ -336,6 +336,7 @@
 .cta__container {
   position: relative;
   width: 90%;
+  height: 301px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
