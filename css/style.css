@@ -567,6 +567,130 @@
           transform: scale(1.1);
 }
 
+.affiliates {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 100%;
+  background: rgba(31, 31, 33, 0.9);
+}
+
+.affiliates__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.affiliates__header {
+  height: 500px;
+  width: 100vw;
+  position: relative;
+}
+
+.affiliates__headerImage {
+  width: 100vw;
+  height: 100%;
+  background: url("../img/affiliates-background.jpg");
+  background-position: cover;
+}
+
+.affiliates__headerDescription {
+  font-family: 'Monument';
+  font-size: 38px;
+  letter-spacing: 7%;
+  font-weight: normal;
+  margin: 20px 0;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.affiliates__services {
+  padding: 100px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.affiliates__serviceBox {
+  -ms-flex-preferred-size: 85%;
+      flex-basis: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.affiliates__serviceTitle {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: left;
+  padding-bottom: 40px;
+  font-family: 'Sen';
+  font-size: 36px;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.affiliates__serviceImage {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.affiliates__serviceDescription {
+  padding-top: 40px;
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  font-family: 'Sen';
+  font-size: 18px;
+  letter-spacing: 3%;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.affiliates__line {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+
+.affiliates__line::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #EC3236;
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,76 @@
+.affiliates{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    background: rgba(31,31,33,0.9);
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__header{
+        height: 500px;
+        width: 100vw;
+        position: relative;
+        &Image{
+            width: 100vw;
+            height: 100%;
+            background: url('../img/affiliates-background.jpg');
+            background-position: cover;
+        }
+        &Description{
+            @include h2-title;
+            text-transform: uppercase;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__services{
+        padding: 100px 0 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    &__serviceBox{
+        flex-basis: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+    &__serviceTitle{
+        flex-basis: 100%;
+        text-align: left;
+        padding-bottom: 40px;
+        @include affilates-service-title;
+    }
+    &__serviceImage{
+        flex-basis: 40%;
+    }
+    &__serviceDescription{
+        padding-top: 40px;
+        flex-basis: 55%;
+        @include affilates-service-description;
+    }
+    &__line{
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin: 30px 0;
+        &::before{
+            position: absolute;
+            top:0;
+            left: 0;
+            content: "";
+            width: 80px;
+            height: 3px;
+            background-color: $accent-color;
+        }
+    }
+}

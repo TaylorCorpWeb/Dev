@@ -45,3 +45,19 @@ $accent-color: #EC3236;
     color: #FFFFFF;
     text-decoration: none;
 }
+@mixin affilates-service-title {
+    font-family: 'Sen';
+    font-size: 36px;
+    font-style: normal;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+}
+@mixin affilates-service-description {
+    font-family: 'Sen';
+    font-size: 18px;
+    letter-spacing: 3%;
+    font-weight: normal;
+    color: #ccc;
+}
