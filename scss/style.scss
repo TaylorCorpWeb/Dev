@@ -150,13 +150,15 @@ h2{
         }
     }
 }
-@media (max-width: 805px){
+@media (max-width: 815px){
     .navigation{
         display: flex;
         justify-content: center;
         &__botmenu{
+            padding: 0;
             &-link{
-                font-size: 15px;
+                font-size: 14px;
+                padding: 15px 25px;
             }
         }
     }
