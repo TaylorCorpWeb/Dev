@@ -100,3 +100,37 @@
         grid-area: small-4;
     }
 }
+@media (max-width: 1024px){
+    .services{
+        &__photoContainerLeft{
+            max-width: 690px;
+            grid-template-columns: 340px 340px; 
+            grid-template-rows: 215px 215px 215px; 
+            gap: 10px; 
+            grid-template-areas: 
+                "big small-1"
+                "small-2 small-3"
+                "small-4 empty"; 
+            padding-bottom: 10px;
+        }
+        &__photoContainerRight{
+            max-width: 690px;
+            grid-template-columns: 340px 340px; 
+            grid-template-rows: 215px 215px 215px; 
+            gap: 10px; 
+            grid-template-areas: 
+                "big small-1"
+                "small-2 small-3"
+                "small-4 empty"; 
+            padding-bottom: 10px;
+        }
+        &__serviceInformation{
+            width: 180px;
+            height: 62px;
+        }
+        &__serviceName{
+            margin-top: -7.5px;
+            font-size: 15px;
+        }
+    }    
+}

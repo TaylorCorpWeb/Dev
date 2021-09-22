@@ -81,3 +81,45 @@
         right: 0;
     }
 }
+@media (max-width: 1024px){
+    .cta{
+        &__header{
+            &Big{
+                font-size: 32px;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .cta{
+        &__container{
+            height: 208px;
+        }
+        &__header{
+            padding: 25px 0 25px 15px;
+            &Big{
+                font-size: 26px;
+                padding: 0;
+            }
+        }
+        &__btn{
+            width: 232px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            a{
+                font-size: 14px;
+                padding: 15px 0;
+                width: 100%;
+                &::before{
+                    left: 5px;
+                }
+            }
+        }
+        &__t-letter{
+            img{
+                height: 208px;
+            }
+        }
+    }
+}

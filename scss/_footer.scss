@@ -77,3 +77,17 @@
         }
     }
 }
+@media (max-width: 1024px){
+    .footer{
+        padding: 40px 25px 40px 25px;
+        &__copyright{
+            font-size: 13px;
+        }
+        &__featuredLinks{
+            margin-right: 60px;
+        }
+        &__socialLinks{
+            padding: 20px 0 0 0;
+        }
+    }
+}
