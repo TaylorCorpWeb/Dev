@@ -123,3 +123,50 @@
         }
     }
 }
+@media (max-width: 500px){
+    .cta{
+        &__container{
+            height: auto;
+            padding: 30px 0;
+            justify-content: center;
+            align-items: center;
+        }
+        &__header{
+            padding: 0 0 0 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            &Big{
+                font-size: 25px;
+                padding: 0;
+                text-align: center;
+                flex-basis: 70%;
+            }
+            &Small{
+                flex-basis: 90%;
+                font-size: 15px;
+                padding: 0;
+                text-align: center;
+            }
+        }
+        &__btn{
+            width: 232px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            a{
+                font-size: 14px;
+                padding: 15px 0;
+                width: 100%;
+                &::before{
+                    left: 5px;
+                }
+            }
+        }
+        &__t-letter{
+            display: none;
+        }
+    }
+}

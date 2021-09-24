@@ -91,3 +91,104 @@
         }
     }
 }
+@media (max-width: 768px){
+    .footer{
+        &__featuredLinks{
+            margin-right: 60px;
+        }
+        &__socialLinks{
+            padding: 20px 0 0 0;
+        }
+        &__contactInfo{
+            p{
+                @include footer-link;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 660px){
+    .footer{
+        &__logo{
+            padding-bottom: 5px;
+            img{
+                height: 37px;
+            }
+        }
+        &__copyright{
+            font-size: 10px;
+        }
+        &__featuredLinks{
+            font-size: 13px;
+            div{
+                a{
+                    display: block;
+                    @include footer-link;
+                    font-size: 11px;
+                    margin: 0 0 10px 25px;
+                    position: relative;
+                }
+                ::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -15px;
+                    height: 1px;
+                    width: 12px;
+                    background-color: $accent-color;
+                    z-index: 2;
+                }
+            }
+            
+        }
+        &__contact{
+            font-size: 13px;
+        }
+        &__contactInfo{
+            display: flex;
+            padding-bottom: 10px;
+            img{
+                padding-right: 10px;
+            }
+            p{
+                @include footer-link;
+                font-size: 11px;
+            }
+        }
+    }
+}
+@media (max-width: 550px){
+    .footer{
+        &__copyright{
+            font-size: 13px;
+        }
+        &__featuredLinks{
+            display: none;
+        }
+        &__contact{
+            display: none;
+        }
+        &__socialLinks{
+            padding: 0;
+            flex-basis: auto;
+            align-self: flex-start;
+            width: 110px;
+            height: 110px;
+            display: grid;
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 40px 40px; 
+            grid-template-rows: 40px 40px; 
+            gap: 10px;
+            grid-template-areas: 
+                "social-1 social-2"
+                "social-3 social-4"; 
+        }
+    }
+}
+@media (max-width: 380px){
+    .footer{
+        &__copyright{
+            font-size: 10px;
+        }
+    }
+}

@@ -211,3 +211,32 @@
         }
     }    
 }
+@media (max-width: 500px){
+    .services{
+        &__photoContainer{
+            width: 340px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            grid-template-rows: repeat(15, 1fr); 
+            gap: 20px;
+            grid-template-areas: 
+                "big-1"
+                "small-1"
+                "small-2"
+                "small-3"
+                "small-4"
+                "big-2"
+                "small-5"
+                "small-6"
+                "small-7"
+                "small-8"
+                "big-3"
+                "small-9"
+                "small-10"
+                "small-11"
+                "small-12"
+                ; 
+        }
+    } 
+}

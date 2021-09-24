@@ -313,7 +313,46 @@ h2{
     }
 }
 
+@media (max-width: 1124px){
+    .main{
+        display: flex;
+        height: auto;
+        overflow: hidden;
+        &__container{
+            padding-bottom: 100px;
+            width: 100%;
+        }
+        &__content{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        &__body{
+            padding: 0 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__btn{
+            margin-left: 50px;
+        }
+        &__title{
+            padding: 200px 30px 0px 50px;
+            font-size: 36px;
+            flex-basis: 100%;
+        }
+        &__line{
+            height: 120%;
+        }
+    }
+}
 @media (max-width: 1024px){
+    .main{
+        &__title{
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 768px){
     .main{
         display: flex;
         height: auto;
@@ -335,6 +374,7 @@ h2{
         }
         &__title{
             padding: 200px 30px 0px 50px;
+            font-size: 36px;
             flex-basis: 100%;
         }
         &__btn{
@@ -359,7 +399,18 @@ h2{
         }
     }
 }
-
+@media (max-width: 500px){
+    .main{
+        &__title{
+            padding: 100px 0 0 20px;
+            font-size: 24px;
+        }
+        &__btn{
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+}
 
 .advantage-section{
     padding: 100px 0;
@@ -652,31 +703,29 @@ h2{
         }
     }
 }
-@media (max-width: 1024px){
+/*
+@media (max-width: 1250px){
     .advantage{
-        overflow: hidden;
         padding: 5px;
         &__contentList{
-            padding: 0;
-            flex-basis: 40%;
-            padding: 5px;
+            width: 40%;
+            height: auto;
         }
         &__contentItem{
-            width: 50%;
+            img{
+                width: 420px;
+            }
         }
         &__tabList{
-            flex-direction: row;
             flex-wrap: wrap;
         }
         &__tabItem{
-            height: 100px;
-            width: 100%;
+            height: 140px;
+            width: 400px;
         }
         &__tabText{
             padding: 50px 20px 50px 50px;
         }
-        &__tabBtn{
-            display: none;
-        }
     }
 }
+*/
