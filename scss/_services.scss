@@ -211,13 +211,13 @@
         }
     }    
 }
-@media (max-width: 500px){
+@media (max-width: 750px){
     .services{
         &__photoContainer{
-            width: 340px;
+            width: 320px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(1, 1fr); 
+            grid-template-columns: 1fr; 
             grid-template-rows: repeat(15, 1fr); 
             gap: 20px;
             grid-template-areas: 
