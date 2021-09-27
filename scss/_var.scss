@@ -1,4 +1,5 @@
 $accent-color: #EC3236;
+$gray-color: #2F2F32;
 
 
 @mixin h2-title {
@@ -57,7 +58,8 @@ $accent-color: #EC3236;
 @mixin affilates-service-description {
     font-family: 'Sen';
     font-size: 18px;
-    letter-spacing: 3%;
+    letter-spacing: .01em;
+    line-height: 1.4em;
     font-weight: normal;
     color: #ccc;
 }
