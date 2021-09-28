@@ -1346,6 +1346,7 @@ h2 {
     cursor: pointer;
     -webkit-transition: 1.5s;
     transition: 1.5s;
+    z-index: 999;
   }
   .header .mobile-menu__icon--active .bar-1 {
     -webkit-transform: rotate(45deg);
