@@ -59,3 +59,24 @@ class TabItem {
 document.addEventListener('DOMContentLoaded', ()=>{
   let tabs = new TabsManager(document.querySelector('.advantage'));
 })
+
+//MENU
+const menuIcon = document.querySelector('.mobile-menu__icon');
+const menuContainer = document.querySelector('.mobile-menu__container');
+const sections = document.querySelectorAll('section');
+const links = document.querySelectorAll('a')
+
+menuIcon.addEventListener("click", () => {
+  menuContainer.classList.toggle('mobile-menu__container--active');
+  menuIcon.classList.toggle('mobile-menu__icon--active');
+})
+sections.forEach(section => {
+  section.addEventListener("click", () => {
+    menuContainer.classList.remove('mobile-menu__container--active');
+  })
+})
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    menuContainer.classList.remove('mobile-menu__container--active');
+  })
+})
