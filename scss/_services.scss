@@ -176,6 +176,7 @@
 }
 @media (max-width: 768px){
     .services{
+        padding-bottom: 40px;
         &__photoContainer{
             width: 690px;
             margin: 0 auto;
@@ -214,7 +215,7 @@
 @media (max-width: 750px){
     .services{
         &__photoContainer{
-            width: 320px;
+            width: 340px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr; 
@@ -239,4 +240,11 @@
                 ; 
         }
     } 
+}
+@media (max-width: 750px){
+    .services{
+        &__photoContainer{
+            grid-template-rows: repeat(15, 200px); 
+        }
+    }
 }
