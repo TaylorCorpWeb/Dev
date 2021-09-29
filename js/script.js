@@ -73,10 +73,12 @@ menuIcon.addEventListener("click", () => {
 sections.forEach(section => {
   section.addEventListener("click", () => {
     menuContainer.classList.remove('mobile-menu__container--active');
+    menuIcon.classList.toggle('mobile-menu__icon--active');
   })
 })
 links.forEach(link => {
   link.addEventListener("click", () => {
     menuContainer.classList.remove('mobile-menu__container--active');
+    menuIcon.classList.toggle('mobile-menu__icon--active');
   })
 })
