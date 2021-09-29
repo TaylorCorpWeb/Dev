@@ -81,12 +81,12 @@ sections.forEach(section => { section.addEventListener("click", menuClose)} );
 links.forEach(link => { link.addEventListener("click", menuClose) });
 
 //SHOW MORE
-const showMore = () => {
-  const showMoreBtn = document.querySelector('.services__showMoreBtn');
-  const photoContainer = document.querySelector('.services__photoContainer');
+const showMoreBtn = document.querySelector('.services__showMoreBtn');
+const photoContainer = document.querySelector('.services__photoContainer');
 
+const showMore = () => {
   showMoreBtn.classList.toggle('services__showMoreBtn--active');
-  photoContainer.classList.toggle('.services__photoContainer--active');
+  photoContainer.classList.toggle('services__photoContainer--active');
 }
 
-showMoreBtn.addEventListener('click', showMore)
+showMoreBtn.addEventListener('click', showMore);
