@@ -64,21 +64,29 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const menuIcon = document.querySelector('.mobile-menu__icon');
 const menuContainer = document.querySelector('.mobile-menu__container');
 const sections = document.querySelectorAll('section');
-const links = document.querySelectorAll('a')
+const links = document.querySelectorAll('a');
 
-menuIcon.addEventListener("click", () => {
+const menuOpen = () => {
   menuContainer.classList.toggle('mobile-menu__container--active');
   menuIcon.classList.toggle('mobile-menu__icon--active');
-})
-sections.forEach(section => {
-  section.addEventListener("click", () => {
-    menuContainer.classList.remove('mobile-menu__container--active');
-    menuIcon.classList.toggle('mobile-menu__icon--active');
-  })
-})
-links.forEach(link => {
-  link.addEventListener("click", () => {
-    menuContainer.classList.remove('mobile-menu__container--active');
-    menuIcon.classList.toggle('mobile-menu__icon--active');
-  })
-})
+}
+
+const menuClose = () => {
+  menuContainer.classList.remove('mobile-menu__container--active');
+  menuIcon.classList.remove('mobile-menu__icon--active');
+}
+
+menuIcon.addEventListener("click", menuOpen);
+sections.forEach(section => { section.addEventListener("click", menuClose)} );
+links.forEach(link => { link.addEventListener("click", menuClose) });
+
+//SHOW MORE
+const showMore = () => {
+  const showMoreBtn = document.querySelector('.services__showMoreBtn');
+  const photoContainer = document.querySelector('.services__photoContainer');
+
+  showMoreBtn.classList.toggle('services__showMoreBtn--active');
+  photoContainer.classList.toggle('.services__photoContainer--active');
+}
+
+showMoreBtn.addEventListener('click', showMore)
