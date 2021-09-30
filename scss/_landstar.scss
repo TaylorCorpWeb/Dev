@@ -1,0 +1,82 @@
+.landstar{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__header{
+        height: 500px;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        &Image{
+            min-width: 100%;
+            min-height: 100%;
+            background: url('../img/landstar-background.jpg');
+            background-size: cover;
+        }
+        &Description{
+            @include h2-title;
+            text-transform: uppercase;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 0;
+    }
+    &__textBox{
+        flex-basis: 50%;
+        align-self: center;
+        padding-left: 75px;
+    }
+    &__text{
+        @include service-description;
+    }
+    &__text-2{
+        padding-top: 25px;
+    }
+}
+@media (max-width: 768px){
+    .landstar{
+        &__content{
+            padding: 50px 0;
+        }
+        &__logo{
+            flex-basis: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+            img{
+                width: 120px;
+            }
+        }
+        &__textBox{
+            flex-basis: 70%;
+            padding-left: 0;
+        }
+        &__text{
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 650px){
+    .landstar{
+        &__header{
+            &Description{
+                font-size: 24px;
+            }
+        }
+        &__textBox{
+            flex-basis: 90%;
+        }
+    }
+}
