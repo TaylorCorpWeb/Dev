@@ -5,6 +5,7 @@
 @import "_cta";
 @import "_footer";
 @import "_affiliates";
+@import "_customers";
 
 *{
     margin: 0;
@@ -125,7 +126,6 @@ h2{
                 height: 35px;
                 margin: 20px;
                 cursor: pointer;
-                transition: 1.5s;
                 z-index: 999;
                 &--active{
                     .bar-1{

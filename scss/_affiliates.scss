@@ -12,9 +12,10 @@
         height: 500px;
         width: 100vw;
         position: relative;
+        overflow: hidden;
         &Image{
-            width: 100vw;
-            height: 100%;
+            min-width: 100%;
+            min-height: 100%;
             background: url('../img/affiliates-background.jpg');
             background-size: cover;
         }
@@ -50,14 +51,14 @@
         flex-basis: 100%;
         text-align: left;
         padding-bottom: 40px;
-        @include affilates-service-title;
+        @include service-title;
     }
     &__serviceImage{
         flex-basis: 40%;
     }
     &__serviceDescription{
         flex-basis: 55%;
-        @include affilates-service-description;
+        @include service-description;
     }
     &__line{
         overflow: hidden;
@@ -71,7 +72,7 @@
             top:0;
             left: 0;
             content: "";
-            width: 20%;
+            width: 10%;
             height: 3px;
             background-color: $accent-color;
             //animation: affiliates-line 5s linear infinite;

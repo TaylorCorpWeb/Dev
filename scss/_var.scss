@@ -46,20 +46,34 @@ $gray-color: #2F2F32;
     color: #FFFFFF;
     text-decoration: none;
 }
-@mixin affilates-service-title {
+@mixin service-title {
     font-family: 'Sen';
     font-size: 36px;
     font-style: normal;
-    font-size: 36px;
     font-weight: bold;
     text-transform: capitalize;
     color: #fff;
 }
-@mixin affilates-service-description {
+@mixin service-description {
     font-family: 'Sen';
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: .01em;
     line-height: 1.4em;
     font-weight: normal;
     color: #ccc;
+}
+@mixin card-title{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+@mixin card-subtitle{
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #C4C4C4;
 }
