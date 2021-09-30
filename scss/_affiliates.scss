@@ -51,14 +51,14 @@
         flex-basis: 100%;
         text-align: left;
         padding-bottom: 40px;
-        @include affilates-service-title;
+        @include service-title;
     }
     &__serviceImage{
         flex-basis: 40%;
     }
     &__serviceDescription{
         flex-basis: 55%;
-        @include affilates-service-description;
+        @include service-description;
     }
     &__line{
         overflow: hidden;

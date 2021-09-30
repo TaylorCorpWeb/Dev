@@ -1,0 +1,143 @@
+.customers{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__header{
+        height: 500px;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        &Image{
+            min-width: 100%;
+            min-height: 100%;
+            background: url('../img/customers-background.jpg');
+            background-size: cover;
+        }
+        &Description{
+            @include h2-title;
+            text-align: center;
+            text-transform: uppercase;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__content{
+        padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    &__contentBox{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__contentBoxClients{
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+    &__textBox{
+        flex-basis: 40%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__contentTitle{
+        @include service-title;
+    }
+    &__contentDescription{
+        @include service-description;
+        color: #fff;
+        flex-basis: 100%;
+    }
+    &__logoContainer{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+        gap: 15px; 
+        grid-template-areas: 
+            "logo-1 . ."
+            "logo-1 logo-4 ."
+            "logo-2 logo-4 logo-6"
+            "logo-2 logo-5 logo-6"
+            "logo-3 logo-5 ."
+            "logo-3 . ."; 
+    }
+    &__logoContainerItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 192px;
+        height: 93px;
+        background-color: #2f2f32;
+        border: 1px solid #4a4a4f;
+        border-radius: 15px;
+    }
+    &__logo-1 { grid-area: logo-1; }
+    &__logo-2 { grid-area: logo-2; }
+    &__logo-3 { grid-area: logo-3; }
+    &__logo-4 { grid-area: logo-4; }
+    &__logo-5 { grid-area: logo-5; }
+    &__logo-6 { grid-area: logo-6; }
+    &__line{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        margin: 30px 0;
+        &::before{
+            position: absolute;
+            top:0;
+            left: 0;
+            content: "";
+            width: 20%;
+            height: 3px;
+            background-color: $accent-color;
+            //animation: affiliates-line 5s linear infinite;
+        }
+    }
+    &__contentBoxTestimonials{
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__contentTitle{
+        @include service-title;
+    }
+    &__quoteBox{
+        position: relative;
+        flex-basis: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+        background-color: #2f2f32;
+        box-shadow: 4px 4px 25px rgba(255, 255, 255, .05);
+        border-radius: 5px;
+    }
+    &__quoteImg{
+        position: absolute;
+        top: -21px;
+        right: 5px;
+    }
+    &__quoteAuthor{
+        flex-basis: 100%;
+        @include card-title;
+    }
+    &__quoteSubtitle{
+        flex-basis: 100%;
+        padding-bottom: 40px;
+        @include card-subtitle;
+    }
+    &__quoteDescription{
+        flex-basis: 100%;
+        @include service-description;
+        color: #fff;
+    }
+}
