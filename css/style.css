@@ -1780,6 +1780,121 @@
   }
 }
 
+.landstar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.landstar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.landstar__header {
+  height: 500px;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.landstar__headerImage {
+  min-width: 100%;
+  min-height: 100%;
+  background: url("../img/landstar-background.jpg");
+  background-size: cover;
+}
+
+.landstar__headerDescription {
+  font-family: 'Monument';
+  font-size: 38px;
+  letter-spacing: 7%;
+  font-weight: normal;
+  margin: 20px 0;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.landstar__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 100px 0;
+}
+
+.landstar__textBox {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 75px;
+}
+
+.landstar__text {
+  font-family: 'Sen';
+  font-size: 16px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: #ccc;
+}
+
+.landstar__text-2 {
+  padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .landstar__content {
+    padding: 50px 0;
+  }
+  .landstar__logo {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .landstar__logo img {
+    width: 120px;
+  }
+  .landstar__textBox {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    padding-left: 0;
+  }
+  .landstar__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 650px) {
+  .landstar__headerDescription {
+    font-size: 24px;
+  }
+  .landstar__textBox {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
