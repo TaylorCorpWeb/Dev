@@ -13,12 +13,8 @@
         width: 100vw;
         position: relative;
         overflow: hidden;
-        &Image{
-            min-width: 100%;
-            min-height: 100%;
-            background: url('../img/affiliates-background.jpg');
-            background-size: cover;
-        }
+        background: url('../img/affiliates-background.jpg');
+        background-size: cover;
         &Description{
             @include h2-title;
             text-transform: uppercase;
@@ -138,7 +134,7 @@
             text-align: center;
         }
         &__serviceDescription{
-            flex-basis: 80%;
+            flex-basis: 100%;
             font-size: 14px;
             padding-left: 20px;
             :nth-child(1){
@@ -181,7 +177,7 @@
             text-align: center;
         }
         &__serviceDescription{
-            flex-basis: 80%;
+            flex-basis: 100%;
             font-size: 14px;
             padding: 20px 0 20px 0;
             :nth-child(1){

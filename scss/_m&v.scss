@@ -1,0 +1,185 @@
+.mv{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__header{
+        height: 500px;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        background: url('../img/mv-background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        &Description{
+            @include h2-title;
+            text-transform: uppercase;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__content{
+        padding: 100px 0;
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative
+    }
+    &__contentTitle{
+        @include service-title;
+        padding: 0 0 75px 50px;
+        flex-basis: 100%;
+    }
+    &__contentBackground{
+        flex-basis: 30%;
+        position: absolute;
+        top: 65%;
+        left: 0;
+        transform: translate(0,-50%);
+        z-index: -1;
+    }
+    &__contentBoxes{
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__contentBox{
+        width: 440px;
+        height: 455px;
+        padding: 20px;
+        position: relative;
+        background-color: #2f2f32;
+        border: 1px solid #4a4a4f;
+        box-shadow: 4px 4px 25px rgba(255, 255, 255, 0.07);
+        &:nth-child(1){
+            margin-right: 80px;
+        }
+    }
+    &__boxIcon{
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }
+    &__boxIcon-1{
+        right: -5px;
+    }
+    &__boxTitle{
+        @include card-title;
+        padding-bottom: 20px;
+        span{
+            color: $accent-color;
+        }
+    }
+    &__boxSubtitle{
+        @include mv-subtitle;
+        padding-bottom: 20px;
+        span{
+            color: $accent-color;
+        }
+    }
+    &__boxText{
+        @include service-description;
+        color: #fff;
+    }
+}
+@media (max-width: 1600px){
+    .mv{
+        &__contentBoxes{
+            justify-content: flex-end;
+            flex-basis: 80%;
+        }
+        &__contentBox{
+            width: 380px;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 1350px){
+    .mv{
+        &__content{
+            padding: 50px 0;
+        }
+        &__contentBox{
+            width: 350px;
+            &:nth-child(1){
+                margin-right: 60px;
+            }
+        }
+    }
+}
+@media (max-width: 1215px){
+    .mv{
+        &__contentBox{
+            background-color: rgba(47, 47, 50, 0.85);
+            backdrop-filter: blur(20px);
+        }
+    }
+}
+@media (max-width: 768px){
+    .mv{
+        &__contentTitle{
+            padding: 0 0 50px 50px ;
+        }
+        &__contentBackground{
+            width: 435px;
+            height: auto;
+            top: 70%;
+            left: -15%;
+        }
+        &__contentTitle{
+            font-size: 28px;
+        }
+        &__contentBox{
+            width: 340px;
+            height: 400px;
+            box-shadow: none;
+            &:nth-child(1){
+                margin-right: 30px;
+            }
+        }
+        &__boxTitle{
+            font-size: 15px;
+        }
+        &__boxSubtitle{
+            font-size: 13px;
+        }
+        &__boxText{
+            font-size: 13px;
+        }
+    }
+}
+@media (max-width: 724px){
+    .mv{
+        &__contentBox{
+            width: 310px;
+            height: auto;
+        }
+    }
+}
+@media (max-width: 660px){
+    .mv{
+        &__contentBoxes{
+            flex-wrap: wrap;
+        }
+        &__contentBackground{
+            top: 65%;
+        }
+        &__contentBoxes{
+            flex-basis: 90%;
+            justify-content: center;
+        }
+        &__contentBox{
+            flex-basis: 100%;
+            height: auto;
+            &:nth-child(1){
+                margin-right: 0;
+                margin-bottom: 65px;
+            }
+        }
+    }
+}
