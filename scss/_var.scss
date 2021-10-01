@@ -77,3 +77,11 @@ $gray-color: #2F2F32;
     line-height: 21px;
     color: #C4C4C4;
 }
+@mixin mv-subtitle{
+    font-family: Sen;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
