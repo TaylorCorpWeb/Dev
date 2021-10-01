@@ -2319,6 +2319,142 @@
   color: #EC3236;
 }
 
+@media (max-width: 900px) {
+  .opportunies__content {
+    padding-bottom: 0px;
+  }
+  .opportunies__contentBox {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .opportunies__contentTitle {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .opportunies__textBox {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 0 50px 75px 50px;
+  }
+  .opportunies__offerWrapper {
+    -ms-flex-preferred-size: 580px;
+        flex-basis: 580px;
+  }
+  .opportunies__offerImg img {
+    height: auto;
+    width: 100%;
+  }
+  .opportunies__offerInfo {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 220px;
+    height: 82.75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #1F1F21;
+  }
+  .opportunies__offerText {
+    font-size: 13px;
+    line-height: 5px;
+    margin-bottom: -11px;
+  }
+  .opportunies__offerName {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .opportunies__headerDescription {
+    font-size: 28px;
+  }
+  .opportunies__content {
+    padding: 50px 0;
+  }
+  .opportunies__contentTitle {
+    padding: 0 0 0 30px;
+    font-size: 28px;
+  }
+  .opportunies__textBox {
+    padding: 0 30px;
+  }
+  .opportunies__contentText {
+    font-size: 13px;
+  }
+  .opportunies__contentSubtitle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 720px) {
+  .opportunies__container {
+    padding-bottom: 75px;
+  }
+  .opportunies__offerWrapper {
+    -ms-flex-preferred-size: 420px;
+        flex-basis: 420px;
+  }
+  .opportunies__offerImg img {
+    height: auto;
+    width: 100%;
+  }
+  .opportunies__offerInfo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 171px;
+    height: 83px;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #1F1F21;
+  }
+  .opportunies__offerName {
+    font-size: 20px;
+    margin: 0;
+  }
+  .opportunies__offerName span {
+    color: #EC3236;
+  }
+}
+
+@media (max-width: 660px) {
+  .opportunies__container {
+    padding-bottom: 30px;
+  }
+  .opportunies__content {
+    padding: 40px 0 40px 0;
+  }
+  .opportunies__headerDescription {
+    font-size: 21px;
+  }
+  .opportunies__offerWrapper {
+    -ms-flex-preferred-size: 327px;
+        flex-basis: 327px;
+  }
+  .opportunies__offerImg img {
+    height: auto;
+    width: 100%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
