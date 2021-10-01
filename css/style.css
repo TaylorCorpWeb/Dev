@@ -2144,6 +2144,181 @@
   }
 }
 
+.opportunies {
+  /*
+    &__bigText{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 463px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.03;
+    }
+    */
+}
+
+.opportunies__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.opportunies__header {
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  overflow: hidden;
+  background: url("../img/opportunies-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.opportunies__headerDescription {
+  font-family: 'Monument';
+  font-size: 38px;
+  letter-spacing: 7%;
+  font-weight: normal;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.opportunies__content {
+  position: relative;
+  padding: 100px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.opportunies__contentBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opportunies__contentTitle {
+  font-family: 'Sen';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 0 0 75px 50px;
+}
+
+.opportunies__textBox {
+  -ms-flex-preferred-size: 55%;
+      flex-basis: 55%;
+  padding-right: 50px;
+}
+
+.opportunies__contentText {
+  font-family: 'Sen';
+  font-size: 16px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: #ccc;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.opportunies__contentSubtitle {
+  font-family: 'Sen';
+  font-size: 16px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: #ccc;
+  color: #fff;
+  font-weight: bold;
+}
+
+.opportunies__contentSubtitle span {
+  color: #EC3236;
+}
+
+.opportunies__offerBox {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.opportunies__offerWrapper {
+  -ms-flex-preferred-size: 740px;
+      flex-basis: 740px;
+  position: relative;
+}
+
+.opportunies__offerInfo {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 270px;
+  height: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1F1F21;
+}
+
+.opportunies__offerText {
+  font-family: 'Sen';
+  font-size: 16px;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+  font-weight: normal;
+  color: #ccc;
+  color: #fff;
+  line-height: 5px;
+  margin-bottom: -31px;
+}
+
+.opportunies__offerName {
+  font-family: 'Sen';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #fff;
+  margin-top: -18px;
+}
+
+.opportunies__offerName span {
+  color: #EC3236;
+}
+
 * {
   margin: 0;
   padding: 0;
