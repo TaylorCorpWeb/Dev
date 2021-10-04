@@ -530,17 +530,35 @@
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (1fr)[13];
         grid-template-rows: repeat(13, 1fr);
-    gap: 10px;
+    gap: 20px;
         grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
   }
 }
 
 @media (max-width: 768px) {
   .services {
-    padding-bottom: 40px;
+    padding-bottom: 0;
+  }
+  .services__showMore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-area: show;
+  }
+  .services__showMoreText {
+    color: #fff;
+  }
+  .services__showMoreImg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .services__photoContainer {
-    width: 690px;
+    width: 680px;
+    height: 900px;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -549,7 +567,11 @@
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 small-8" "big-3 small-9" "small-10 small-11" "small-12 empty";
+        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "empty empty" "empty empty" "empty empty" "empty empty";
+  }
+  .services__photoContainer--active {
+    height: auto;
+        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 big-3" "small-8 small-9" "small-10 small-11" "small-12 empty";
   }
   .services__photoContainerItem .desktop {
     display: none;
@@ -570,14 +592,21 @@
 @media (max-width: 750px) {
   .services__photoContainer {
     width: 310px;
+    height: 1360px;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[6];
+        grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "empty" "empty" "empty" "empty" "empty" "empty" "empty" "empty" "empty";
+  }
+  .services__photoContainer--active {
+    height: 2000px;
     -ms-grid-rows: (1fr)[15];
         grid-template-rows: repeat(15, 1fr);
-    gap: 20px;
         grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
   }
 }
