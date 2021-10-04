@@ -1147,8 +1147,8 @@
           transform: translate(-50%, -50%);
 }
 
-.affiliates__services {
-  padding: 100px 0;
+.affiliates__content {
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1161,9 +1161,9 @@
           justify-content: center;
 }
 
-.affiliates__serviceBox {
-  -ms-flex-preferred-size: 85%;
-      flex-basis: 85%;
+.affiliates__contentBox {
+  -ms-flex-preferred-size: 95%;
+      flex-basis: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,23 +1172,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px;
 }
 
-.affiliates__serviceBox-wrapper {
+.affiliates__contentBox-wrapper {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.affiliates__serviceTitle {
+.affiliates__contentTitle {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   text-align: left;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   font-family: 'Sen';
   font-size: 36px;
   font-style: normal;
@@ -1197,20 +1200,14 @@
   color: #fff;
 }
 
-.affiliates__serviceImage {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-}
-
-.affiliates__serviceDescription {
-  -ms-flex-preferred-size: 55%;
-      flex-basis: 55%;
+.affiliates__contentDescription {
   font-family: 'Sen';
   font-size: 16px;
   letter-spacing: .01em;
   line-height: 1.4em;
   font-weight: normal;
   color: #ccc;
+  width: 60%;
 }
 
 .affiliates__line {
@@ -1236,33 +1233,36 @@
   .affiliates__headerDescription {
     font-size: 30px;
   }
-  .affiliates__services {
-    padding: 20px 0px 40px 0px;
+  .affiliates__content {
     width: 100%;
+  }
+  .affiliates__content-content {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .affiliates__serviceBox {
+  .affiliates__contentBox {
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
+  }
+  .affiliates__contentBox:nth-child(1) {
     padding: 0 0 20px 0;
   }
-  .affiliates__serviceDescription {
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+  .affiliates__contentDescription {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
     font-size: 15px;
     padding-left: 5px;
   }
-  .affiliates__serviceDescription :nth-child(1) {
+  .affiliates__contentDescription :nth-child(1) {
     margin-top: 10px;
   }
-  .affiliates__serviceImage {
+  .affiliates__contentImage {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .affiliates__serviceImage img {
+  .affiliates__contentImage img {
     width: 250px;
     height: auto;
   }
@@ -1271,98 +1271,67 @@
   }
 }
 
-@media (max-width: 695px) {
+@media (max-width: 768px) {
   .affiliates__headerDescription {
     width: 100%;
     text-align: center;
   }
-  .affiliates__services {
-    padding: 20px 0px 40px 0px;
-    width: 100%;
+  .affiliates__content {
+    padding: 50px 0;
+  }
+  .affiliates__contentBox {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .affiliates__serviceBox {
+  .affiliates__contentTitle {
+    font-size: 19px;
     -ms-flex-preferred-size: 90%;
         flex-basis: 90%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 20px 0;
   }
-  .affiliates__serviceTitle {
-    font-size: 19px;
-    text-align: center;
-  }
-  .affiliates__serviceDescription {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .affiliates__contentDescription {
     font-size: 14px;
     padding-left: 20px;
   }
-  .affiliates__serviceDescription :nth-child(1) {
-    margin-top: 10px;
-  }
-  .affiliates__serviceImage {
+  .affiliates__contentImage {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    width: 250px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .affiliates__serviceImage img {
+  .affiliates__contentImage img {
     width: 250px;
     height: auto;
   }
 }
 
 @media (max-width: 540px) {
-  .affiliates__headerDescription {
-    width: 100%;
-    text-align: center;
+  .affiliates__content {
+    padding: 40px 0;
   }
-  .affiliates__services {
-    padding: 20px 0px 40px 0px;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .affiliates__contentTitle {
+    padding: 0;
   }
-  .affiliates__serviceBox {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0 0 20px 0;
-  }
-  .affiliates__serviceBox-wrapper {
+  .affiliates__contentBox-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .affiliates__serviceTitle {
-    font-size: 19px;
-    text-align: center;
-  }
-  .affiliates__serviceDescription {
+  .affiliates__contentDescription {
+    padding-top: 20px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    font-size: 14px;
-    padding: 20px 0 20px 0;
   }
-  .affiliates__serviceDescription :nth-child(1) {
-    margin-top: 10px;
+  .affiliates__contentImage {
+    /*
+            align-self: center;
+            flex-basis: 70%;*/
   }
-  .affiliates__serviceImage {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-  }
-  .affiliates__serviceImage img {
+  .affiliates__contentImage img {
     width: 250px;
     height: auto;
   }
@@ -1384,7 +1353,6 @@
   overflow: hidden;
   background: url("../img/customers-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .customers__headerDescription {
@@ -1393,7 +1361,6 @@
   letter-spacing: 7%;
   font-weight: normal;
   margin: 20px 0;
-  text-align: center;
   text-transform: uppercase;
   position: absolute;
   top: 50%;
@@ -1403,7 +1370,7 @@
 }
 
 .customers__content {
-  padding: 100px 0;
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1428,7 +1395,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 .customers__textBox {
@@ -1448,6 +1415,7 @@
   font-weight: bold;
   text-transform: capitalize;
   color: #fff;
+  padding-top: 0;
 }
 
 .customers__contentDescription {
@@ -1553,7 +1521,7 @@
 }
 
 .customers__contentBoxTestimonials {
-  padding-top: 100px;
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1690,7 +1658,7 @@
     background: url("../img/customers-background.jpg");
   }
   .customers__content {
-    padding: 40px 0px;
+    padding: 50px 0px;
   }
   .customers__contentBox {
     -webkit-box-pack: center;
@@ -1730,15 +1698,19 @@
     width: 192px;
     height: 93px;
   }
+  .customers__contentBoxClients {
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+  }
   .customers__contentBoxTestimonials {
-    padding-top: 40px;
+    padding-top: 0px;
   }
   .customers__contentBoxTestimonials h2 {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .customers__quoteBox {
-    margin-top: 40px;
+    margin-top: 20px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1754,6 +1726,10 @@
   }
   .customers__headerDescription {
     font-size: 24px;
+    text-align: center;
+  }
+  .customers__content {
+    padding-top: 40px;
   }
   .customers__contentTitle {
     -ms-flex-preferred-size: 100%;
@@ -1806,7 +1782,6 @@
   overflow: hidden;
   background: url("../img/landstar-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .landstar__headerDescription {
@@ -1824,15 +1799,17 @@
 }
 
 .landstar__content {
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 100px 0;
 }
 
 .landstar__textBox {
@@ -1851,6 +1828,7 @@
   line-height: 1.4em;
   font-weight: normal;
   color: #ccc;
+  color: #fff;
 }
 
 .landstar__text-2 {
@@ -1885,6 +1863,9 @@
 }
 
 @media (max-width: 650px) {
+  .landstar__content {
+    padding: 40px 0;
+  }
   .landstar__header {
     height: 300px;
   }
@@ -1904,6 +1885,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
+  position: relative;
 }
 
 .mv__header {
@@ -1913,7 +1895,6 @@
   overflow: hidden;
   background: url("../img/mv-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .mv__headerDescription {
@@ -1931,18 +1912,17 @@
 }
 
 .mv__content {
-  padding: 100px 0;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
 }
 
 .mv__contentTitle {
@@ -1952,7 +1932,8 @@
   font-weight: bold;
   text-transform: capitalize;
   color: #fff;
-  padding: 0 0 75px 50px;
+  padding-bottom: 75px;
+  margin: 0;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
@@ -1961,7 +1942,7 @@
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   position: absolute;
-  top: 65%;
+  top: 78%;
   left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -2083,10 +2064,12 @@
     padding: 0 0 50px 50px;
   }
   .mv__contentBackground {
-    width: 435px;
     height: auto;
-    top: 70%;
-    left: -15%;
+    top: 78%;
+    left: 0;
+  }
+  .mv__contentBackground img {
+    width: 235px;
   }
   .mv__contentTitle {
     font-size: 28px;
@@ -2119,6 +2102,9 @@
 }
 
 @media (max-width: 660px) {
+  .mv__content {
+    padding: 40px 0 40px 0;
+  }
   .mv__contentBoxes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2132,6 +2118,9 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .mv__contentTitle {
+    padding: 20px 0 50px 0;
   }
   .mv__contentBox {
     -ms-flex-preferred-size: 100%;
@@ -2170,17 +2159,15 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   overflow: hidden;
-  padding-bottom: 100px;
 }
 
 .opportunies__header {
-  position: relative;
   height: 500px;
   width: 100vw;
+  position: relative;
   overflow: hidden;
   background: url("../img/opportunies-background.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .opportunies__headerDescription {
@@ -2189,7 +2176,6 @@
   letter-spacing: 7%;
   font-weight: normal;
   margin: 20px 0;
-  text-align: center;
   text-transform: uppercase;
   position: absolute;
   top: 50%;
@@ -2199,13 +2185,17 @@
 }
 
 .opportunies__content {
-  position: relative;
-  padding: 100px 0;
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .opportunies__contentBox {
@@ -2224,13 +2214,11 @@
   font-weight: bold;
   text-transform: capitalize;
   color: #fff;
-  padding: 0 0 75px 50px;
 }
 
 .opportunies__textBox {
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  padding-right: 50px;
 }
 
 .opportunies__contentText {
@@ -2268,6 +2256,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 75px;
 }
 
 .opportunies__offerWrapper {
@@ -2395,6 +2384,9 @@
   .opportunies__contentSubtitle {
     font-size: 13px;
   }
+  .opportunies__offerBox {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -2444,6 +2436,14 @@
   }
   .opportunies__headerDescription {
     font-size: 21px;
+  }
+  .opportunies__textBox {
+    padding: 0;
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  .opportunies__offerBox {
+    padding-bottom: 40px;
   }
   .opportunies__offerWrapper {
     -ms-flex-preferred-size: 327px;

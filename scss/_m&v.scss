@@ -1,43 +1,28 @@
 .mv{
     &__container{
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
+        @include container;
+        position: relative;
     }
     &__header{
-        height: 500px;
-        width: 100vw;
-        position: relative;
-        overflow: hidden;
-        background: url('../img/mv-background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include header('../img/mv-background.jpg');
         &Description{
             @include h2-title;
-            text-transform: uppercase;
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include h2-center-position;
         }
     }
     &__content{
-        padding: 100px 0;
-        flex-basis: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        position: relative
+        @include content;
     }
     &__contentTitle{
         @include service-title;
-        padding: 0 0 75px 50px;
+        padding-bottom: 75px;
+        margin: 0;
         flex-basis: 100%;
     }
     &__contentBackground{
         flex-basis: 30%;
         position: absolute;
-        top: 65%;
+        top: 78%;
         left: 0;
         transform: translate(0,-50%);
         z-index: -1;
@@ -126,10 +111,12 @@
             padding: 0 0 50px 50px ;
         }
         &__contentBackground{
-            width: 435px;
             height: auto;
-            top: 70%;
-            left: -15%;
+            top: 78%;
+            left: 0;
+            img{
+                width: 235px;
+            }
         }
         &__contentTitle{
             font-size: 28px;
@@ -163,6 +150,9 @@
 }
 @media (max-width: 660px){
     .mv{
+        &__content{
+            padding: 40px 0 40px 0;
+        }
         &__contentBoxes{
             flex-wrap: wrap;
         }
@@ -172,6 +162,9 @@
         &__contentBoxes{
             flex-basis: 90%;
             justify-content: center;
+        }
+        &__contentTitle{
+            padding: 20px 0 50px 0;
         }
         &__contentBox{
             flex-basis: 100%;

@@ -1,33 +1,16 @@
 .opportunies{
     &__container{
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
-        padding-bottom: 100px;
+        @include container;
     }
     &__header{
-        position: relative;
-        height: 500px;
-        width: 100vw;
-        overflow: hidden;
-        background: url('../img/opportunies-background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+        @include header('../img/opportunies-background.jpg');
         &Description{
             @include h2-title;
-            text-align: center;
-            text-transform: uppercase;
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include h2-center-position;
         }
     }
     &__content{
-        position: relative;
-        padding: 100px 0;
-        display: flex;
-        flex-wrap: wrap;
+        @include content;
     }
     /*
     &__bigText{
@@ -51,11 +34,9 @@
     }
     &__contentTitle{
         @include service-title;
-        padding: 0 0 75px 50px;
     }
     &__textBox{
         flex-basis: 55%;
-        padding-right: 50px;
     }
     &__contentText{
         @include service-description;
@@ -74,6 +55,7 @@
         flex-basis: 100%;
         justify-content: center;
         display: flex;
+        padding-bottom: 75px;
     }
     &__offerWrapper{
         flex-basis: 740px;
@@ -175,6 +157,9 @@
         &__contentSubtitle{
             font-size: 13px;
         }
+        &__offerBox{
+            padding-bottom: 50px;
+        }
     }
 }
 @media (max-width: 720px){
@@ -224,6 +209,13 @@
             &Description{
                 font-size: 21px;
             }
+        }
+        &__textBox{
+            padding: 0;
+            flex-basis: 90%;
+        }
+        &__offerBox{
+            padding-bottom: 40px;
         }
         &__offerWrapper{
             flex-basis: 327px;
