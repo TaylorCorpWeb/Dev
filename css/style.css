@@ -621,7 +621,7 @@
 @media (max-width: 750px) {
   .services__photoContainer {
     width: 310px;
-    height: 1165px;
+    height: 1100px;
     margin: 0 auto;
     overflow: hidden;
     display: -ms-grid;
