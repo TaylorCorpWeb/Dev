@@ -540,19 +540,48 @@
     padding-bottom: 0;
   }
   .services__showMore {
+    margin: 0 auto 50px auto;
+    width: 320px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 100%;
+    height: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    grid-area: show;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
   }
-  .services__showMoreText {
+  .services__showMoreBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .services__showMoreBtnText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    font-family: 'Sen';
+    font-size: 15px;
+    color: #EC3236;
     color: #fff;
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
   }
-  .services__showMoreImg {
+  .services__showMoreBtnImg {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
@@ -592,26 +621,24 @@
 @media (max-width: 750px) {
   .services__photoContainer {
     width: 310px;
-    height: 1360px;
+    height: 1165px;
     margin: 0 auto;
+    overflow: hidden;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
-    gap: 20px;
-        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "empty" "empty" "empty" "empty" "empty" "empty" "empty" "empty" "empty";
-  }
-  .services__photoContainer--active {
-    height: 2000px;
     -ms-grid-rows: (1fr)[15];
         grid-template-rows: repeat(15, 1fr);
+    gap: 20px;
         grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
+  }
+  .services__photoContainer--active {
+    height: auto;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 550px) {
   .services__photoContainer {
     -ms-grid-rows: (200px)[15];
         grid-template-rows: repeat(15, 200px);

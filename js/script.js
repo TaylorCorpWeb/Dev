@@ -83,8 +83,8 @@ links.forEach(link => { link.addEventListener("click", menuClose) });
 //SHOW MORE
 const photoContainer = document.querySelector('.services__photoContainer');
 const showMoreBtn = document.querySelector('.services__showMoreBtn');
-const showMoreText = document.querySelector('.services__showMoreText');
-const showMoreImg = document.querySelector('.services__showMoreImg');
+const showMoreText = document.querySelector('.services__showMoreBtnText');
+const showMoreImg = document.querySelector('.services__showMoreBtnImg');
 
 const showMore = () => {
   showMoreBtn.classList.toggle('services__showMoreBtn--active');
