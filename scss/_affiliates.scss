@@ -1,78 +1,42 @@
 .affiliates{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: 100%;
+    @include section;
     &__container{
-        display: flex;
-        flex-wrap: wrap;
-        overflow: hidden;
+        @include container;
     }
     &__header{
-        height: 500px;
-        width: 100vw;
-        position: relative;
-        overflow: hidden;
-        background: url('../img/affiliates-background.jpg');
-        background-size: cover;
+        @include header('../img/affiliates-background.jpg');
         &Description{
             @include h2-title;
-            text-transform: uppercase;
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include h2-center-position;
         }
     }
-    &__services{
-        padding: 100px 0;
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        margin: 0 auto;
-        justify-content: center;
+    &__content{
+        @include content;
     }
-    &__serviceBox{
-        flex-basis: 85%;
+    &__contentBox{
+        flex-basis: 95%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 40px;
         &-wrapper{
+            flex-basis: 100%;
+            flex-wrap: nowrap;
             display: flex;
-            align-items: flex-end;
+            align-items: center;
         }
     }
-    &__serviceTitle{
+    &__contentTitle{
         flex-basis: 100%;
         text-align: left;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         @include service-title;
     }
-    &__serviceImage{
-        flex-basis: 40%;
-    }
-    &__serviceDescription{
-        flex-basis: 55%;
+    &__contentDescription{
         @include service-description;
+        width: 60%;
     }
     &__line{
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        height: 3px;
-        background-color: #fff;
-        margin: 30px 0;
-        &::before{
-            position: absolute;
-            top:0;
-            left: 0;
-            content: "";
-            width: 10%;
-            height: 3px;
-            background-color: $accent-color;
-            //animation: affiliates-line 5s linear infinite;
-        }
+        @include line;
     }
 }
 @media (max-width: 1144px){
@@ -82,24 +46,27 @@
                 font-size: 30px;
             }
         }
-        &__services{
-            padding: 20px 0px 40px 0px;
+        &__content{
             width: 100%;
-            justify-content: center;
+            &-content{
+                justify-content: center;
+            }
         }
-        &__serviceBox{
+        &__contentBox{
             flex-basis: 90%;
-            padding: 0 0 20px 0;
+            &:nth-child(1){
+                padding: 0 0 20px 0;
+            }
         }
-        &__serviceDescription{
-            flex-basis: 60%;
+        &__contentDescription{
+            flex-basis: 70%;
             font-size: 15px;
             padding-left: 5px;
             :nth-child(1){
                 margin-top: 10px;
             }
         }
-        &__serviceImage{
+        &__contentImage{
             align-self: center;
             img{
                 width: 250px;
@@ -111,7 +78,7 @@
         }
     }
 }
-@media (max-width: 695px){
+@media (max-width: 768px){
     .affiliates{
         &__header{
             &Description{
@@ -119,29 +86,23 @@
                 text-align: center;
             }
         }
-        &__services{
-            padding: 20px 0px 40px 0px;
-            width: 100%;
+        &__content{
+            padding: 50px 0;
+        }
+        &__contentBox{
             justify-content: center;
         }
-        &__serviceBox{
-            flex-basis: 90%;
-            justify-content: center;
-            padding: 0 0 20px 0;
-        }
-        &__serviceTitle{
+        &__contentTitle{
             font-size: 19px;
-            text-align: center;
+            flex-basis: 90%;
         }
-        &__serviceDescription{
-            flex-basis: 100%;
+        &__contentDescription{
             font-size: 14px;
             padding-left: 20px;
-            :nth-child(1){
-                margin-top: 10px;
-            }
         }
-        &__serviceImage{
+        &__contentImage{
+            flex-basis: 40%;
+            width: 250px;
             align-self: center;
             img{
                 width: 250px;
@@ -152,41 +113,26 @@
 }
 @media (max-width: 540px){
     .affiliates{
-        &__header{
-            &Description{
-                width: 100%;
-                text-align: center;
-            }
+        &__content{
+            padding: 40px 0;
         }
-        &__services{
-            padding: 20px 0px 40px 0px;
-            width: 100%;
-            justify-content: center;
+        &__contentTitle{
+            padding: 0;
         }
-        &__serviceBox{
-            flex-basis: 90%;
-            justify-content: center;
-            padding: 0 0 20px 0;
+        &__contentBox{
             &-wrapper{
                 flex-wrap: wrap;
                 justify-content: center;
             }
         }
-        &__serviceTitle{
-            font-size: 19px;
-            text-align: center;
-        }
-        &__serviceDescription{
+        &__contentDescription{
+            padding-top: 20px;
             flex-basis: 100%;
-            font-size: 14px;
-            padding: 20px 0 20px 0;
-            :nth-child(1){
-                margin-top: 10px;
-            }
         }
-        &__serviceImage{
+        &__contentImage{
+            /*
             align-self: center;
-            flex-basis: 70%;
+            flex-basis: 70%;*/
             img{
                 width: 250px;
                 height: auto;
