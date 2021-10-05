@@ -221,7 +221,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-      grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 small-3 small-4" "small-5 small-6 big-2 big-2" "small-7 small-8 big-2 big-2" "big-3 big-3 small-9 small-10" "big-3 big-3 small-11 small-12";
+      grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 small-3 small-4" "small-5 small-6 big-2 big-2" "small-7 small-8 big-2 big-2" "big-3 big-3 small-9 small-10" "big-3 big-3 small-11 small-12";
 }
 
 .services__photoContainerItem {
@@ -418,7 +418,7 @@
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 big-1 small-1" "big-1 big-1 small-2" "small-3 small-4 small-5" "small-6 big-2 big-2" "small-7 big-2 big-2" "small-8 small-9 small-10" "big-3 big-3 small-11" "big-3 big-3 small-12";
+        grid-template-areas: "big-1 big-1 small-1" "big-1 big-1 small-2" "small-3 small-4 small-5" "small-6 big-2 big-2" "small-7 big-2 big-2" "small-8 small-9 small-10" "big-3 big-3 small-11" "big-3 big-3 small-12";
   }
 }
 
@@ -531,7 +531,7 @@
     -ms-grid-rows: (1fr)[13];
         grid-template-rows: repeat(13, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
+        grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
   }
 }
 
@@ -549,7 +549,7 @@
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 small-8" "big-3 small-9" "small-10 small-11" "small-12 empty";
+        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 small-8" "big-3 small-9" "small-10 small-11" "small-12 empty";
   }
   .services__photoContainerItem .desktop {
     display: none;
@@ -578,7 +578,7 @@
     -ms-grid-rows: (1fr)[15];
         grid-template-rows: repeat(15, 1fr);
     gap: 20px;
-        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
+        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
   }
 }
 
@@ -1094,7 +1094,7 @@
     -ms-grid-rows: 40px 40px;
         grid-template-rows: 40px 40px;
     gap: 10px;
-        grid-template-areas: "social-1 social-2" "social-3 social-4";
+        grid-template-areas: "social-1 social-2" "social-3 social-4";
   }
 }
 
@@ -1439,7 +1439,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
-      grid-template-areas: "logo-1 . ." "logo-1 logo-4 ." "logo-2 logo-4 logo-6" "logo-2 logo-5 logo-6" "logo-3 logo-5 ." "logo-3 . .";
+      grid-template-areas: "logo-1 . ." "logo-1 logo-4 ." "logo-2 logo-4 logo-6" "logo-2 logo-5 logo-6" "logo-3 logo-5 ." "logo-3 . .";
 }
 
 .customers__logoContainerItem {
@@ -1635,7 +1635,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
+        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
   }
   .customers__logoContainerItem {
     width: 192px;
@@ -1692,7 +1692,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
+        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
   }
   .customers__logoContainerItem {
     width: 192px;
@@ -1747,7 +1747,7 @@
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     gap: 12.5px;
-        grid-template-areas: "logo-1 logo-2" "logo-3 logo-4" "logo-5 logo-6";
+        grid-template-areas: "logo-1 logo-2" "logo-3 logo-4" "logo-5 logo-6";
   }
   .customers__logoContainerItem {
     width: 155px;
@@ -3275,29 +3275,64 @@ h2 {
   display: block;
 }
 
-/*
-@media (max-width: 1250px){
-    .advantage{
-        padding: 5px;
-        &__contentList{
-            width: 40%;
-            height: auto;
-        }
-        &__contentItem{
-            img{
-                width: 420px;
-            }
-        }
-        &__tabList{
-            flex-wrap: wrap;
-        }
-        &__tabItem{
-            height: 140px;
-            width: 400px;
-        }
-        &__tabText{
-            padding: 50px 20px 50px 50px;
-        }
-    }
+@media screen and (max-width: 1400px) {
+  .advantage__contentItem {
+    background-image: url(../img/anim-img1_adaptive.png), url(../img/anim-img2_adaptive.png);
+  }
+  .advantage__contentItem img {
+    width: 450px;
+  }
+  .advantage__tabItem {
+    width: auto;
+  }
 }
-*/
+
+@media screen and (max-width: 1400px) {
+  .advantage__contentList {
+    padding: 0;
+  }
+  .advantage__tabItem {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .advantage__tabList {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .advantage__contentItem {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .advantage__tabItem {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .advantage__tabBtn {
+    display: none;
+  }
+  .advantage__tabText {
+    padding: 0 30px;
+  }
+  .advantage__tabText::before, .advantage__tabText::after {
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .advantage__tabText::after {
+    top: 50px;
+  }
+  .advantage__tabTitle {
+    margin-top: 120px;
+  }
+  .advantage__tabDescription {
+    padding-bottom: 20px;
+  }
+}
