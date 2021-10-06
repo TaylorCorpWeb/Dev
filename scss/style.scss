@@ -62,7 +62,6 @@ del{
 h2{
     @include h2-title;
 }
-
 .header{
     padding: 15px 0;
     background: #2F2F32;
@@ -96,7 +95,6 @@ h2{
 @media (max-width: 768px){
     .header{
         &__topmenu{
-            justify-content: space-between;
             &-list{
                 a{
                     font-size: 10px;
@@ -450,7 +448,7 @@ h2{
         &__content{
             display: flex;
             width: 100%;
-            height: auto;
+            height: 800px;
         }
         &__body{
             padding: 0 0;
@@ -461,7 +459,8 @@ h2{
             margin-left: 50px;
         }
         &__title{
-            padding: 200px 30px 0px 50px;
+            align-self: center;
+            margin: 0px 30px 0px 50px;
             font-size: 36px;
             flex-basis: 100%;
         }
@@ -480,27 +479,29 @@ h2{
 @media (max-width: 768px){
     .main{
         display: flex;
-        height: auto;
+        height: 433px;
         overflow: hidden;
         &__container{
-            padding-bottom: 100px;
             width: 100%;
+            display: flex;
+            padding-bottom: 0px;
         }
         &__content{
             display: flex;
             width: 100%;
-            height: auto;
+            height: 433px;
         }
         &__body{
-            padding: 0 0;
+            height: 300px;
+            align-self: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: flex-end;
         }
         &__title{
-            padding: 200px 30px 0px 50px;
+            margin-top: 50px;
             font-size: 36px;
-            flex-basis: 100%;
         }
         &__btn{
             margin-top: 75px;
@@ -541,8 +542,8 @@ h2{
     padding: 100px 0;
     position: relative;
 }
-//particles js
 
+//particles js
 .particles-js-canvas-el{
     position: absolute;
     top: 0;
@@ -680,29 +681,87 @@ h2{
         }
     }
 }
-/*
-@media (max-width: 1250px){
+
+@media screen and (max-width: 1400px) {
     .advantage{
-        padding: 5px;
-        &__contentList{
-            width: 40%;
-            height: auto;
-        }
-        &__contentItem{
-            img{
-                width: 420px;
+        &__content{
+            &Item{
+                background-image: 
+                url(../img/anim-img1_adaptive.png),
+                url(../img/anim-img2_adaptive.png);
+                img{
+                    width: 450px;
+                }
             }
         }
-        &__tabList{
-            flex-wrap: wrap;
-        }
-        &__tabItem{
-            height: 140px;
-            width: 400px;
-        }
-        &__tabText{
-            padding: 50px 20px 50px 50px;
+        &__tab{
+            &Item{
+                width: auto;
+            }
         }
     }
 }
-*/
+
+@media screen and (max-width: 1400px) {
+    .advantage{
+        &__content{
+            &List{
+                padding: 0;
+            }
+        }
+        &__tab{
+            &Item{
+                width: 80%;
+                margin: 0 auto; 
+            }
+            &List{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .advantage{
+        &__content{
+            &Item{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .advantage{
+        &__tab{
+            &Item{
+                width: 100%;
+                margin: 0;
+                height: 100%;
+            }
+            &Btn{
+                display: none;
+            }
+            &Text{
+                padding: 0 30px;
+                &::before, &::after{
+                    top: 20px;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                }
+                &::after{
+                    top: 50px;
+                }                
+            }
+            &Title{
+                margin-top: 120px;
+            }
+            &Description{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

@@ -528,17 +528,14 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (1fr)[13];
-        grid-template-rows: repeat(13, 1fr);
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
     gap: 20px;
         grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
   }
 }
 
 @media (max-width: 768px) {
-  .services {
-    padding-bottom: 0;
-  }
   .services__showMore {
     margin: 0 auto 50px auto;
     width: 320px;
@@ -2630,11 +2627,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .header__topmenu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .header__topmenu-list a {
     font-size: 10px;
   }
@@ -3063,7 +3055,7 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 800px;
   }
   .main__body {
     padding: 0 0;
@@ -3077,7 +3069,10 @@ h2 {
     margin-left: 50px;
   }
   .main__title {
-    padding: 200px 30px 0px 50px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0px 30px 0px 50px;
     font-size: 36px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -3098,22 +3093,27 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: auto;
+    height: 433px;
     overflow: hidden;
   }
   .main__container {
-    padding-bottom: 100px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0px;
   }
   .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 433px;
   }
   .main__body {
-    padding: 0 0;
+    height: 300px;
+    -ms-flex-item-align: center;
+        align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3122,12 +3122,13 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .main__title {
-    padding: 200px 30px 0px 50px;
+    margin-top: 50px;
     font-size: 36px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
   .main__btn {
     margin-top: 75px;
@@ -3331,29 +3332,64 @@ h2 {
   display: block;
 }
 
-/*
-@media (max-width: 1250px){
-    .advantage{
-        padding: 5px;
-        &__contentList{
-            width: 40%;
-            height: auto;
-        }
-        &__contentItem{
-            img{
-                width: 420px;
-            }
-        }
-        &__tabList{
-            flex-wrap: wrap;
-        }
-        &__tabItem{
-            height: 140px;
-            width: 400px;
-        }
-        &__tabText{
-            padding: 50px 20px 50px 50px;
-        }
-    }
+@media screen and (max-width: 1400px) {
+  .advantage__contentItem {
+    background-image: url(../img/anim-img1_adaptive.png), url(../img/anim-img2_adaptive.png);
+  }
+  .advantage__contentItem img {
+    width: 450px;
+  }
+  .advantage__tabItem {
+    width: auto;
+  }
 }
-*/
+
+@media screen and (max-width: 1400px) {
+  .advantage__contentList {
+    padding: 0;
+  }
+  .advantage__tabItem {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .advantage__tabList {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .advantage__contentItem {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .advantage__tabItem {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+  }
+  .advantage__tabBtn {
+    display: none;
+  }
+  .advantage__tabText {
+    padding: 0 30px;
+  }
+  .advantage__tabText::before, .advantage__tabText::after {
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .advantage__tabText::after {
+    top: 50px;
+  }
+  .advantage__tabTitle {
+    margin-top: 120px;
+  }
+  .advantage__tabDescription {
+    padding-bottom: 20px;
+  }
+}

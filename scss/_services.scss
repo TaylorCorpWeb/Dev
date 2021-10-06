@@ -160,7 +160,7 @@
             transition: .5s;
             display: grid;
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: repeat(13, 1fr); 
+            grid-template-rows: repeat(12, 1fr); 
             gap: 20px;
             grid-template-areas: 
                     "big-1 big-1"
@@ -273,7 +273,6 @@
 }
 @media (max-width: 768px){
     .services{
-        padding-bottom: 0;
         &__showMore{
             margin: 0 auto 50px auto;
             width: 320px;
