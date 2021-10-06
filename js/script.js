@@ -81,12 +81,22 @@ sections.forEach(section => { section.addEventListener("click", menuClose)} );
 links.forEach(link => { link.addEventListener("click", menuClose) });
 
 //SHOW MORE
-const showMoreBtn = document.querySelector('.services__showMoreBtn');
 const photoContainer = document.querySelector('.services__photoContainer');
+const showMoreBtn = document.querySelector('.services__showMoreBtn');
+const showMoreText = document.querySelector('.services__showMoreBtnText');
+const showMoreImg = document.querySelector('.services__showMoreBtnImg');
 
 const showMore = () => {
   showMoreBtn.classList.toggle('services__showMoreBtn--active');
   photoContainer.classList.toggle('services__photoContainer--active');
+
+  if(showMoreBtn.classList.contains('services__showMoreBtn--active')){
+    showMoreText.textContent = "Show less...";
+    showMoreImg.style.transform = "rotate(270deg)";
+  }else{
+    showMoreText.textContent = "Show more...";
+    showMoreImg.style.transform = "rotate(90deg)";
+  }
 }
 
 showMoreBtn.addEventListener('click', showMore);

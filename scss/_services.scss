@@ -160,8 +160,8 @@
             transition: .5s;
             display: grid;
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: repeat(13, 1fr); 
-            gap: 10px;
+            grid-template-rows: repeat(12, 1fr); 
+            gap: 20px;
             grid-template-areas: 
                     "big-1 big-1"
                     "big-1 big-1"
@@ -273,9 +273,37 @@
 }
 @media (max-width: 768px){
     .services{
-        padding-bottom: 40px;
+        &__showMore{
+            margin: 0 auto 50px auto;
+            width: 320px;
+            display: flex;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        &__showMoreBtn{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-basis: 100%;
+            &Text{
+                flex-basis: 100%;
+                text-align: center;
+                @include h2-description;
+                color: #fff;
+                font-weight: normal;
+                margin: 0;
+                font-size: 18px;
+            }
+            &Img{
+                transform: rotate(90deg);
+            }
+        }
         &__photoContainer{
-            width: 690px;
+            width: 680px;
+            height: 900px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(2, 1fr); 
@@ -286,10 +314,22 @@
                 "small-2 small-3"
                 "small-4 big-2"
                 "small-5 small-6"
-                "small-7 small-8"
-                "big-3 small-9"
+                "empty empty"
+                "empty empty"
+                "empty empty"
+                "empty empty"; 
+            &--active{
+                height: auto;
+                grid-template-areas: 
+                "big-1 small-1"
+                "small-2 small-3"
+                "small-4 big-2"
+                "small-5 small-6"
+                "small-7 big-3"
+                "small-8 small-9"
                 "small-10 small-11"
                 "small-12 empty"; 
+            }
         }
         &__photoContainerItem{
             .desktop{
@@ -313,7 +353,9 @@
     .services{
         &__photoContainer{
             width: 310px;
+            height: 1100px;
             margin: 0 auto;
+            overflow: hidden;
             display: grid;
             grid-template-columns: 1fr; 
             grid-template-rows: repeat(15, 1fr); 
@@ -335,10 +377,14 @@
                 "small-11"
                 "small-12"
                 ; 
+            &--active{
+                height: auto;
+            }
         }
     } 
 }
-@media (max-width: 750px){
+
+@media (max-width: 550px){
     .services{
         &__photoContainer{
             grid-template-rows: repeat(15, 200px); 

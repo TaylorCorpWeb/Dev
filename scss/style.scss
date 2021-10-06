@@ -62,7 +62,6 @@ del{
 h2{
     @include h2-title;
 }
-
 .header{
     padding: 15px 0;
     background: #2F2F32;
@@ -96,7 +95,6 @@ h2{
 @media (max-width: 768px){
     .header{
         &__topmenu{
-            justify-content: space-between;
             &-list{
                 a{
                     font-size: 10px;
@@ -450,7 +448,7 @@ h2{
         &__content{
             display: flex;
             width: 100%;
-            height: auto;
+            height: 800px;
         }
         &__body{
             padding: 0 0;
@@ -461,7 +459,8 @@ h2{
             margin-left: 50px;
         }
         &__title{
-            padding: 200px 30px 0px 50px;
+            align-self: center;
+            margin: 0px 30px 0px 50px;
             font-size: 36px;
             flex-basis: 100%;
         }
@@ -480,27 +479,29 @@ h2{
 @media (max-width: 768px){
     .main{
         display: flex;
-        height: auto;
+        height: 433px;
         overflow: hidden;
         &__container{
-            padding-bottom: 100px;
             width: 100%;
+            display: flex;
+            padding-bottom: 0px;
         }
         &__content{
             display: flex;
             width: 100%;
-            height: auto;
+            height: 433px;
         }
         &__body{
-            padding: 0 0;
+            height: 300px;
+            align-self: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            align-items: flex-end;
         }
         &__title{
-            padding: 200px 30px 0px 50px;
+            margin-top: 50px;
             font-size: 36px;
-            flex-basis: 100%;
         }
         &__btn{
             margin-top: 75px;

@@ -221,7 +221,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 20px;
-      grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 small-3 small-4" "small-5 small-6 big-2 big-2" "small-7 small-8 big-2 big-2" "big-3 big-3 small-9 small-10" "big-3 big-3 small-11 small-12";
+      grid-template-areas: "big-1 big-1 small-1 small-2" "big-1 big-1 small-3 small-4" "small-5 small-6 big-2 big-2" "small-7 small-8 big-2 big-2" "big-3 big-3 small-9 small-10" "big-3 big-3 small-11 small-12";
 }
 
 .services__photoContainerItem {
@@ -418,7 +418,7 @@
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 big-1 small-1" "big-1 big-1 small-2" "small-3 small-4 small-5" "small-6 big-2 big-2" "small-7 big-2 big-2" "small-8 small-9 small-10" "big-3 big-3 small-11" "big-3 big-3 small-12";
+        grid-template-areas: "big-1 big-1 small-1" "big-1 big-1 small-2" "small-3 small-4 small-5" "small-6 big-2 big-2" "small-7 big-2 big-2" "small-8 small-9 small-10" "big-3 big-3 small-11" "big-3 big-3 small-12";
   }
 }
 
@@ -528,19 +528,63 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: (1fr)[13];
-        grid-template-rows: repeat(13, 1fr);
-    gap: 10px;
-        grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
+    -ms-grid-rows: (1fr)[12];
+        grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+        grid-template-areas: "big-1 big-1" "big-1 big-1" "small-1 small-2" "small-3 small-4" "big-2 big-2" "big-2 big-2" "small-5 small-6" "small-7 small-8" "big-3 big-3" "big-3 big-3" "small-9 small-10" "small-11 small-12";
   }
 }
 
 @media (max-width: 768px) {
-  .services {
-    padding-bottom: 40px;
+  .services__showMore {
+    margin: 0 auto 50px auto;
+    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .services__showMoreBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .services__showMoreBtnText {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+    font-family: 'Sen';
+    font-size: 15px;
+    color: #EC3236;
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+    font-size: 18px;
+  }
+  .services__showMoreBtnImg {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .services__photoContainer {
-    width: 690px;
+    width: 680px;
+    height: 900px;
     margin: 0 auto;
     display: -ms-grid;
     display: grid;
@@ -549,7 +593,11 @@
     -ms-grid-rows: (1fr)[8];
         grid-template-rows: repeat(8, 1fr);
     gap: 10px;
-        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 small-8" "big-3 small-9" "small-10 small-11" "small-12 empty";
+        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "empty empty" "empty empty" "empty empty" "empty empty";
+  }
+  .services__photoContainer--active {
+    height: auto;
+        grid-template-areas: "big-1 small-1" "small-2 small-3" "small-4 big-2" "small-5 small-6" "small-7 big-3" "small-8 small-9" "small-10 small-11" "small-12 empty";
   }
   .services__photoContainerItem .desktop {
     display: none;
@@ -570,7 +618,9 @@
 @media (max-width: 750px) {
   .services__photoContainer {
     width: 310px;
+    height: 1100px;
     margin: 0 auto;
+    overflow: hidden;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -578,11 +628,14 @@
     -ms-grid-rows: (1fr)[15];
         grid-template-rows: repeat(15, 1fr);
     gap: 20px;
-        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
+        grid-template-areas: "big-1" "small-1" "small-2" "small-3" "small-4" "big-2" "small-5" "small-6" "small-7" "small-8" "big-3" "small-9" "small-10" "small-11" "small-12";
+  }
+  .services__photoContainer--active {
+    height: auto;
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 550px) {
   .services__photoContainer {
     -ms-grid-rows: (200px)[15];
         grid-template-rows: repeat(15, 200px);
@@ -1094,7 +1147,7 @@
     -ms-grid-rows: 40px 40px;
         grid-template-rows: 40px 40px;
     gap: 10px;
-        grid-template-areas: "social-1 social-2" "social-3 social-4";
+        grid-template-areas: "social-1 social-2" "social-3 social-4";
   }
 }
 
@@ -1439,7 +1492,7 @@
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 15px;
-      grid-template-areas: "logo-1 . ." "logo-1 logo-4 ." "logo-2 logo-4 logo-6" "logo-2 logo-5 logo-6" "logo-3 logo-5 ." "logo-3 . .";
+      grid-template-areas: "logo-1 . ." "logo-1 logo-4 ." "logo-2 logo-4 logo-6" "logo-2 logo-5 logo-6" "logo-3 logo-5 ." "logo-3 . .";
 }
 
 .customers__logoContainerItem {
@@ -1635,7 +1688,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
+        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
   }
   .customers__logoContainerItem {
     width: 192px;
@@ -1692,7 +1745,7 @@
         grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
+        grid-template-areas: "logo-1 logo-3 logo-5" "logo-2 logo-4 logo-6";
   }
   .customers__logoContainerItem {
     width: 192px;
@@ -1747,7 +1800,7 @@
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     gap: 12.5px;
-        grid-template-areas: "logo-1 logo-2" "logo-3 logo-4" "logo-5 logo-6";
+        grid-template-areas: "logo-1 logo-2" "logo-3 logo-4" "logo-5 logo-6";
   }
   .customers__logoContainerItem {
     width: 155px;
@@ -2574,11 +2627,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .header__topmenu {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .header__topmenu-list a {
     font-size: 10px;
   }
@@ -3007,7 +3055,7 @@ h2 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 800px;
   }
   .main__body {
     padding: 0 0;
@@ -3021,7 +3069,10 @@ h2 {
     margin-left: 50px;
   }
   .main__title {
-    padding: 200px 30px 0px 50px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0px 30px 0px 50px;
     font-size: 36px;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -3042,22 +3093,27 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: auto;
+    height: 433px;
     overflow: hidden;
   }
   .main__container {
-    padding-bottom: 100px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0px;
   }
   .main__content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 433px;
   }
   .main__body {
-    padding: 0 0;
+    height: 300px;
+    -ms-flex-item-align: center;
+        align-self: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -3066,12 +3122,13 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
   .main__title {
-    padding: 200px 30px 0px 50px;
+    margin-top: 50px;
     font-size: 36px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
   }
   .main__btn {
     margin-top: 75px;
